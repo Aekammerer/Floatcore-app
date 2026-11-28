@@ -7,12 +7,15 @@ of the app, anywhere, can be checked.
 
 ## The settled build
 
-- **Version:** core pack **v3-16** — `floatcore-core-v3-16.html` (single self-contained HTML file)
-- **md5:** `9b48e3ca628f247781011525eb23a0c6`
-- **Size:** 3,793,627 bytes
-- **Settled:** 2026-11-26, by Tony's verdict after the Tier-4 bench run on his own board
-  (two full anti-theft ladder climbs, rung 3 at exactly the 5th counted step, zero guard starvation).
-- Full frozen lineage (v3-12 → v3-16, with every version's hash, status, and sources): see
+- **Version:** core pack **v3-17** — `floatcore-core-v3-17.html` (single self-contained HTML file)
+- **md5:** `16c758c9f13ff9c6db32b49f6b788526`
+- **Size:** 3,799,632 bytes
+- **Settled:** 2026-11-27, by Tony's verdict after the Tier-4 bench run on his own board
+  (Part A read exact on three reads, rung 3 at the 3rd counted step, RELEASE and mid-pulse
+  DISARM proven, zero guard starvation).
+- **Previous settled build:** core pack **v3-16** — `floatcore-core-v3-16.html`,
+  md5 `9b48e3ca628f247781011525eb23a0c6`, settled 2026-11-26; superseded by v3-17.
+- Full frozen lineage (v3-12 → v3-17, with every version's hash, status, and sources): see
   [VERSIONS.md](VERSIONS.md).
 
 Verify any copy: run `md5sum` on it. If the hash differs from the one above, it is not the
