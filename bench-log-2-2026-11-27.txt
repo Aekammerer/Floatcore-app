@@ -1,0 +1,87 @@
+[00:00] Deterrent panel ready — torque gate shut until Part A reads the app config and the board is locked.
+[02:36] Part A read OK — timeout 1000 ms · brake 0.00 A · signature 2099347128 (6.05+ layout, 279 B reply)
+[06:06] SET TAMPER — the whole guard is armed in one tap: voice tamper watch + the sample-driven three-rung ladder. It stands guard once the board is locked.
+[06:09] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:09] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[06:11] TORQUE released (timer) — handbrake-0 sent
+[06:25] TORQUE START — pulsehold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:25] GUARD RUNG 2 — carried: 15 A pulsed hold SENT (TorqueSession, shudder-pattern ticks at the 15 A peak) + spoken put-the-board-down warning.
+[06:25] ESCALATION rung 2 spoken — “Warning. This board is locked. Put it down now — keep carrying it and the full alarm triggers.”
+[06:25] GUARD STEP 1 of 3 counted (carrying / shaking — dynamic-accel peak 0.36 g)
+[06:26] GUARD STEP 2 of 3 counted (carrying / shaking — dynamic-accel peak 0.35 g)
+[06:28] GUARD STEP 3 of 3 counted (carrying / shaking — dynamic-accel peak 0.21 g)
+[06:28] TORQUE released (guard — rung 3 — the shudder replaces the hold) — handbrake-0 sent
+[06:28] TORQUE START — shudder at 25 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:28] GUARD RUNG 3 — 3 steps: FULL SHUDDER SENT (25 A, TorqueSession, footpad-press abort armed) + stolen/tracked warning; repeats every 45 s until put-down or DISARM.
+[06:28] ESCALATION rung 3 spoken — “Your actions have caused this board to be identified as stolen and being tracked. Authorities have been notified. Put it down now, or you will be caught and prosecuted.”
+[06:38] TORQUE released (timer) — handbrake-0 sent
+[07:10] TAMPER RE-ARMED — 5 s still-dwell after the episode; a new move is a new episode and will speak again.
+[07:13] Copy failed (clipboard permission, or the page sits in a frame) — use Download instead.
+[07:14] GUARD RUNG 3 — repeat warning (board still engaged)
+[07:14] ESCALATION rung 3 repeat spoken — “Your actions have caused this board to be identified as stolen and being tracked. Authorities have been notified. Put it down now, or you will be caught and prosecuted.”
+[07:20] DISARM — the whole response stands down: speech cancelled, ladder reset (rung 0, steps cleared), repeats stopped, ladder torque released if any was active (rider tap). Re-arm the ladder watch to re-arm the ladder.
+[07:20] GUARD STAND-DOWN (DISARM) — engine stopped, any torque released, tamper watch disarmed, rung state zeroed. Nothing fires until Set Tamper is tapped again.
+[07:20] DISARM — full stand-down complete: intervals cleared, engine stopped, torque released, tamper disarmed. Continued disturbance will produce nothing until Set Tamper is tapped again.
+[07:29] BOARD-REPORTED LOCK — the board's state report shows the locked (disabled) state and this session sent no lock: a persisted lock from an earlier session. Sequencer state synced to the board's report, so Unlock sends the real unlock.
+[07:29] BOARD REPORT CLEAR — the board no longer reports the locked state; the persisted lock is clear.
+[09:28] Part A read OK — timeout 1000 ms · brake 0.00 A · signature 2099347128 (6.05+ layout, 279 B reply)
+[09:31] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:31] TORQUE released (pointer released) — handbrake-0 sent
+[09:32] TORQUE START — shudder at 25 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:35] TORQUE released (RELEASE button) — handbrake-0 sent
+[09:36] TORQUE START — hold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:38] TORQUE released (RELEASE button) — handbrake-0 sent
+[09:39] TORQUE START — hold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:39] TORQUE released (RELEASE button) — handbrake-0 sent
+[09:40] TORQUE START — shudder at 25 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:41] TORQUE released (RELEASE button) — handbrake-0 sent
+[09:41] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:41] TORQUE released (pointer released) — handbrake-0 sent
+[09:42] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:42] TORQUE released (pointer released) — handbrake-0 sent
+[09:43] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:43] TORQUE released (pointer released) — handbrake-0 sent
+[09:45] TORQUE START — shudder at 25 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:46] TORQUE released (RELEASE button) — handbrake-0 sent
+[09:49] SET TAMPER — the whole guard is armed in one tap: voice tamper watch + the sample-driven three-rung ladder. It stands guard once the board is locked.
+[09:51] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:51] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[09:53] TORQUE released (timer) — handbrake-0 sent
+[09:57] TORQUE START — pulsehold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:57] GUARD RUNG 2 — carried: 15 A pulsed hold SENT (TorqueSession, shudder-pattern ticks at the 15 A peak) + spoken put-the-board-down warning.
+[09:57] ESCALATION rung 2 spoken — “Warning. This board is locked. Put it down now — keep carrying it and the full alarm triggers.”
+[09:57] GUARD STEP 1 of 3 counted (carrying / shaking — dynamic-accel peak 0.33 g)
+[09:57] TORQUE released (guard — owner cancel) — handbrake-0 sent
+[09:57] GUARD EPISODE CANCELLED (owner cancel) — rungs reset; the guard stays armed.
+[09:58] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[09:58] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[09:59] TORQUE released (guard — owner cancel) — handbrake-0 sent
+[09:59] GUARD EPISODE CANCELLED (owner cancel) — rungs reset; the guard stays armed.
+[10:00] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[10:00] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[10:01] TORQUE released (guard — owner cancel) — handbrake-0 sent
+[10:01] GUARD EPISODE CANCELLED (owner cancel) — rungs reset; the guard stays armed.
+[10:02] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[10:02] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[10:03] TORQUE released (superseded by the rung-2 pulsed hold) — handbrake-0 sent
+[10:03] TORQUE START — pulsehold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[10:03] GUARD RUNG 2 — carried: 15 A pulsed hold SENT (TorqueSession, shudder-pattern ticks at the 15 A peak) + spoken put-the-board-down warning.
+[10:03] ESCALATION rung 2 spoken — “Warning. This board is locked. Put it down now — keep carrying it and the full alarm triggers.”
+[10:03] TORQUE released (guard — owner cancel) — handbrake-0 sent
+[10:03] GUARD EPISODE CANCELLED (owner cancel) — rungs reset; the guard stays armed.
+[10:05] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[10:05] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[10:05] TORQUE released (superseded by the rung-2 pulsed hold) — handbrake-0 sent
+[10:05] TORQUE START — pulsehold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[10:05] GUARD RUNG 2 — carried: 15 A pulsed hold SENT (TorqueSession, shudder-pattern ticks at the 15 A peak) + spoken put-the-board-down warning.
+[10:05] ESCALATION rung 2 spoken — “Warning. This board is locked. Put it down now — keep carrying it and the full alarm triggers.”
+[10:05] GUARD STEP 1 of 3 counted (carrying / shaking — dynamic-accel peak 0.30 g)
+[10:06] GUARD STEP 2 of 3 counted (carrying / shaking — dynamic-accel peak 0.28 g)
+[10:10] DISARM — the whole response stands down: speech cancelled, ladder reset (rung 0, steps cleared), repeats stopped, ladder torque released if any was active (rider tap). Re-arm the ladder watch to re-arm the ladder.
+[10:10] TORQUE released (guard stand-down — DISARM) — handbrake-0 sent
+[10:10] GUARD STAND-DOWN (DISARM) — engine stopped, any torque released, tamper watch disarmed, rung state zeroed. Nothing fires until Set Tamper is tapped again.
+[10:10] DISARM — full stand-down complete: intervals cleared, engine stopped, torque released, tamper disarmed. Continued disturbance will produce nothing until Set Tamper is tapped again.
+[10:12] DISARM — the whole response stands down: speech cancelled, ladder reset (rung 0, steps cleared), repeats stopped, ladder torque released if any was active (rider tap). Re-arm the ladder watch to re-arm the ladder.
+[10:12] GUARD STAND-DOWN (DISARM) — engine stopped, any torque released, tamper watch disarmed, rung state zeroed. Nothing fires until Set Tamper is tapped again.
+[10:12] DISARM — full stand-down complete: intervals cleared, engine stopped, torque released, tamper disarmed. Continued disturbance will produce nothing until Set Tamper is tapped again.
+[10:17] Part A read OK — timeout 1000 ms · brake 0.00 A · signature 2099347128 (6.05+ layout, 279 B reply)

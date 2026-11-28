@@ -1,0 +1,18 @@
+[00:00] Deterrent panel ready — torque gate shut until Part A reads the app config and the board is locked.
+[02:36] Part A read OK — timeout 1000 ms · brake 0.00 A · signature 2099347128 (6.05+ layout, 279 B reply)
+[06:06] SET TAMPER — the whole guard is armed in one tap: voice tamper watch + the sample-driven three-rung ladder. It stands guard once the board is locked.
+[06:09] TORQUE START — micro at 5 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:09] GUARD RUNG 1 — disturbance sustained: little jerk SENT (5 A micro-dose, TorqueSession).
+[06:11] TORQUE released (timer) — handbrake-0 sent
+[06:25] TORQUE START — pulsehold at 15 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:25] GUARD RUNG 2 — carried: 15 A pulsed hold SENT (TorqueSession, shudder-pattern ticks at the 15 A peak) + spoken put-the-board-down warning.
+[06:25] ESCALATION rung 2 spoken — “Warning. This board is locked. Put it down now — keep carrying it and the full alarm triggers.”
+[06:25] GUARD STEP 1 of 3 counted (carrying / shaking — dynamic-accel peak 0.36 g)
+[06:26] GUARD STEP 2 of 3 counted (carrying / shaking — dynamic-accel peak 0.35 g)
+[06:28] GUARD STEP 3 of 3 counted (carrying / shaking — dynamic-accel peak 0.21 g)
+[06:28] TORQUE released (guard — rung 3 — the shudder replaces the hold) — handbrake-0 sent
+[06:28] TORQUE START — shudder at 25 A (sender-side cap; heartbeat 0.5 s; 120 s session budget)
+[06:28] GUARD RUNG 3 — 3 steps: FULL SHUDDER SENT (25 A, TorqueSession, footpad-press abort armed) + stolen/tracked warning; repeats every 45 s until put-down or DISARM.
+[06:28] ESCALATION rung 3 spoken — “Your actions have caused this board to be identified as stolen and being tracked. Authorities have been notified. Put it down now, or you will be caught and prosecuted.”
+[06:38] TORQUE released (timer) — handbrake-0 sent
+[07:10] TAMPER RE-ARMED — 5 s still-dwell after the episode; a new move is a new episode and will speak again.
